@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <NewComp/>
     <router-view/>
   </div>
 </template>
 
 <script>
+import NewComp from "@/components/New_comp"
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    NewComp
+  }
 }
 </script>
 
