@@ -1,16 +1,20 @@
 <template>
   <div id="app">
     <NewComp/>
+    <Child2/>
     <router-view/>
   </div>
 </template>
 
 <script>
 import NewComp from "@/components/New_comp"
+import Child2 from "@/components/Child2"
+
 export default {
   name: 'App',
   components:{
-    NewComp
+    NewComp,
+    Child2
   }
 }
 </script>
